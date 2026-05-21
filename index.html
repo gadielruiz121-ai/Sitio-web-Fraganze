@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- head de la pagina, lugar donde se coloca el icono de la pagina, el nombre, autor etc -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gadiel">
+    <link rel="icon" href="Imagenes/Imagenes/Logo.jpeg">
+    <title>FRAGANZE</title>
+
+
+<!-- la etiqueta style es para dar formato/orden y color a las diferentes zonas de la pagina -->
+<style>
+
+    nav {
+
+        display: flex; justify-content:space-around
+
+    }
+
+body {
+
+    background-color: rgb(255, 255, 236);
+    color: rgb(63, 48, 0);
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- la parte del header es el encabezado de la pagina, esta zona contiene las etiquetas de navegacion, los logos y el nombre de la pagina, y esta presente en todas las demas paginas al igual que el head y el style -->
+
+    <header id="inicio">
+        <img src="Imagenes/Imagenes/Logo.jpeg" alt="logo" style="display: block; margin: auto; width: 120px; height: 120px;">
+        <img src="Imagenes/Imagenes/Icono.svg" alt="logo" style="display: block; margin: auto; width: 120px; height: 120px;">
+        <h1 style="display: flex; justify-content: center;">FRAGANZE</h1>
+        <nav>
+            <a href="file:///C:/Users/Desarrollo/Desktop/Recursos_Proyecto_Fraganze/Sitio%20web%20Fraganze/index.html">Inicio</a>
+            <a href="file:///C:/Users/Desarrollo/Desktop/Recursos_Proyecto_Fraganze/Sitio%20web%20Fraganze/Catalogo.html">Catalogo</a>
+            <a href="file:///C:/Users/Desarrollo/Desktop/Recursos_Proyecto_Fraganze/Sitio%20web%20Fraganze/Formulario.html">Formulario</a>
+        </nav>
+    </header>
+
+    <!-- la parte del main es toda la zona central de la pagina, en esta pagina principal, el main contiene los videos, audios, misiones y visiones de la empresa -->
+
+    <main><br>
+
+        <!-- informacion de la empresa -->
+
+        <h1>Nuestra mision:</h1>
+        <p>Brindar a nuestros clientes perfumes de diseñador originales y de alta calidad, ofreciendo una experiencia de compra confiable, elegante y accesible, para que cada persona encuentre una fragancia que refleje su estilo y personalidad.</p>
+        <h1><br>Nuestra vision:</h1>
+        <p>Ser una tienda reconocida a nivel nacional por la venta de perfumes de diseñador destacando por nuestra autenticidad, excelente servicio al cliente y amplia variedad de fragancias exclusivas para todos los gustos. </p>
+        <br><q><em>Un perfume es la forma mas intensa del recuerdo </em></q>
+
+        <!-- zona multimedia -->
+
+        <br><video src="Video/Video/Cristiano Ronaldo Discover, the NEW fragrance by Ronaldo.mp4" controls muted autoplay loop style="display: block; margin: auto; width: 300px; height: 250px;">
+            <source src="Video/Video/Video de Respaldo.mp4" type="video.mp4">
+        </video><br>
+        <audio src="Audio/Audio/Chill Guy Theme (Gia Margaret - Hinoki Wood) _ CHILL PIANO VERSION.mp3" controls muted loop style="display: block; margin: auto">
+            <source src="Audio/Audio/Cancion de respaldo.mp3" type="audio.mp3">
+        </audio>
+    </main>
+
+<!-- la zona del footer es el pie de la pagina, en esta parte al igual que en el header, esta presente en todas las paginas de la misma manera y contiene una etiqueta de originalidad y el simbolo de copyright -->
+    
+<footer>
+        <p style="display: flex; justify-content: center;">&copy; Garantia de originalidad. <a href="#inicio">Volver al inicio</a></p>
+    </footer>
+    
+</body>
+</html>
