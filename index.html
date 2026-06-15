@@ -6,36 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gadiel">
     <link rel="icon" href="Imagenes/Imagenes/Logo.jpeg">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <title>FRAGANZE</title>
-
-
-<!-- la etiqueta style es para dar formato/orden y color a las diferentes zonas de la pagina -->
-<style>
-
-    nav {
-
-        display: flex; justify-content:space-around
-
-    }
-
-body {
-
-    background-color: rgb(255, 255, 236);
-    color: rgb(63, 48, 0);
-
-}
-
-</style>
 
 </head>
 <body>
 
+    <div class="principal">
+
 <!-- la parte del header es el encabezado de la pagina, esta zona contiene las etiquetas de navegacion, los logos y el nombre de la pagina, y esta presente en todas las demas paginas al igual que el head y el style -->
 
     <header id="inicio">
-        <img src="Imagenes/Imagenes/Logo.jpeg" alt="logo" style="display: block; margin: auto; width: 120px; height: 120px;">
-        <img src="Imagenes/Imagenes/Icono.svg" alt="logo" style="display: block; margin: auto; width: 120px; height: 120px;">
-        <h1 style="display: flex; justify-content: center;">FRAGANZE</h1>
+        <img src="assets/Imagenes/Logo.jpeg" alt="logo" class="logo">
+        <img src="assets/Imagenes/Icono.svg" alt="logo" class="svg">
+        <h1>FRAGANZE</h1>
         <nav>
             <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -59,19 +44,26 @@ body {
 
         <!-- zona multimedia -->
 
-        <br><video src="Video/Video/Cristiano Ronaldo Discover, the NEW fragrance by Ronaldo.mp4" controls muted autoplay loop style="display: block; margin: auto; width: 300px; height: 250px;">
-            <source src="Video/Video/Video de Respaldo.mp4" type="video/mp4">
+        <div class="multimedia">
+
+        <br><video src="assets/Video/Cristiano Ronaldo Discover, the NEW fragrance by Ronaldo.mp4" controls muted autoplay loop>
+            <source src="assets/Video/Video de Respaldo.mp4" type="video/mp4">
         </video><br>
-        <audio src="Audio/Audio/Chill Guy Theme (Gia Margaret - Hinoki Wood) _ CHILL PIANO VERSION.mp3" controls muted loop style="display: block; margin: auto">
-            <source src="Audio/Audio/Cancion de respaldo.mp3" type="audio/mp3">
+        <audio src="assets/Audio/Chill Guy Theme (Gia Margaret - Hinoki Wood) _ CHILL PIANO VERSION.mp3" controls muted loop>
+            <source src="assets/Audio/Cancion de respaldo.mp3" type="audio/mp3">
         </audio>
+
+        </div>
+
     </main>
 
 <!-- la zona del footer es el pie de la pagina, en esta parte al igual que en el header, esta presente en todas las paginas de la misma manera y contiene una etiqueta de originalidad y el simbolo de copyright -->
     
 <footer>
-        <p style="display: flex; justify-content: center;">&copy; Garantia de originalidad. <a href="#inicio">Volver al inicio</a></p>
+        <p>&copy; Garantia de originalidad. <a href="#inicio">Volver al inicio</a></p>
     </footer>
+
+    </div>
     
 </body>
 </html>

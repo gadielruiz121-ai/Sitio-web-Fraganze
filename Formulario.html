@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- head de la pagina, lugar donde se coloca el icono de la pagina, el nombre, autor etc -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gadiel">
     <link rel="icon" href="Imagenes/Imagenes/Logo.jpeg">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <title>FRAGANZE</title>
-
-<style>
-
-nav {
-
-display: flex; justify-content: space-around;
-
-}
-body {
-
-    background-color: rgb(255, 255, 236);
-    color: rgb(63, 48, 0);
-
-}
-
-</style>
 
 </head>
 <body>
 
+    <div class="principal">
+
+<!-- la parte del header es el encabezado de la pagina, esta zona contiene las etiquetas de navegacion, los logos y el nombre de la pagina, y esta presente en todas las demas paginas al igual que el head y el style -->
+
     <header id="inicio">
-        <img src="Imagenes/Imagenes/Logo.jpeg" alt="logo" style="display: block; margin: auto; width: 120px; height: 120px;">
-        <img src="Imagenes/Imagenes/Icono.svg" alt="logo" style="display: block; margin: auto; width: 120px; height: 120px;">
-        <h1 style="display: flex; justify-content: center;">FRAGANZE</h1>
+        <img src="assets/Imagenes/Logo.jpeg" alt="logo" class="logo">
+        <img src="assets/Imagenes/Icono.svg" alt="logo" class="svg">
+        <h1>FRAGANZE</h1>
         <nav>
             <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -45,6 +36,8 @@ body {
 
 <fieldset>
     <legend>Formulario</legend>
+
+    <form action="">
 
 <!-- casilla de nombre -->
     <label for="">Nombre:</label>
@@ -83,11 +76,13 @@ body {
     <!-- boton de envio del formulario -->
     <button type="submit">Enviar Formulario</button>
 
+    </form>
+
 </fieldset>
     </main>
 
     <footer>
-        <p style="display: flex; justify-content: center;">&copy; Garantia de originalidad. <a href="#inicio">Volver al inicio</a></p>
+        <p>&copy; Garantia de originalidad. <a href="#inicio">Volver al inicio</a></p>
     </footer>
     
 </body>

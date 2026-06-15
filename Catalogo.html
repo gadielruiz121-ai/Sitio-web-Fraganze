@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- head de la pagina, lugar donde se coloca el icono de la pagina, el nombre, autor etc -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gadiel">
     <link rel="icon" href="Imagenes/Imagenes/Logo.jpeg">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
     <title>FRAGANZE</title>
-
-<style>
-
-    nav {
-
-        display: flex; justify-content:space-around
-
-    }
-
-body {
-
-    background-color: rgb(255, 255, 236);
-    color: rgb(63, 48, 0);
-
-}
-
-</style>
 
 </head>
 <body>
 
+    <div class="principal">
+
+<!-- la parte del header es el encabezado de la pagina, esta zona contiene las etiquetas de navegacion, los logos y el nombre de la pagina, y esta presente en todas las demas paginas al igual que el head y el style -->
+
     <header id="inicio">
-        <img src="Imagenes/Imagenes/Logo.jpeg" alt="logo" style="display: block; margin: auto; width: 120px; height: 120px;">
-        <img src="Imagenes/Imagenes/Icono.svg" alt="logo" style="display: block; margin: auto; width: 120px; height: 120px;">
-        <h1 style="display: flex; justify-content: center;">FRAGANZE</h1>
+        <img src="assets/Imagenes/Logo.jpeg" alt="logo" class="logo">
+        <img src="assets/Imagenes/Icono.svg" alt="logo" class="svg">
+        <h1>FRAGANZE</h1>
         <nav>
             <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -44,71 +34,110 @@ body {
 
         <!-- la zona del catalogo, contiene una tabla con nombres, imagenes y precios de los productos del catalogo y una lista descriptiva con los acordes de cada producto -->
 
-        <table border="1" style="display: flex; justify-content: center;">
-            <thead>
-                <tr>
-                    <th>En venta</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th colspan="5">Productos</th>
-                </tr>
-                <tr>
+        <div class="imagenes">
 
-                    <!-- imagenes de los productos -->
-                    <td><img src="Imagenes/Imagenes/Aqcua di Gio Parfum.png" alt="Acqua di gio" style="width: 250px; height: 275px;"></td>
-                    <td><img src="Imagenes/Imagenes/Jean Paul Gaultier le beau le parfum.png" alt="Jean paul gaultier" style="width: 250px; height: 275px;"></td>
-                    <td><img src="Imagenes/Imagenes/Scandal.png" alt="scandal" style="width: 250px; height: 275px;"></td>
-                    <td><img src="Imagenes/Imagenes/Stronger With You Intensely.png" alt="stronger with you" style="width: 250px; height: 275px;"></td>
-                    <td><img src="Imagenes/Imagenes/Valentino Born in Roma intense.png" alt="valentino born in roma" style="width: 250px; height: 275px;"></td>
-                </tr>
-                <tr>
-                    <th colspan="5">Nombres</th>
-                </tr>
-                <tr>
+            <div class="rotateright">
 
-                    <!-- nombres de los productos -->
-                    <td>Acqua Di Gio Parfum</td>
-                    <td>Jean Paul Gaultier Le Beau Le Parfum</td>
-                    <td>Scandal Jean Paul Gaultier</td>
-                    <td>Stronger With You Intensely</td>
-                    <td>Valentino Born In Roma Intense</td>
-                </tr>
-                <tr>
-                    <th colspan="5">Precios</th>
-                </tr>
-                <tr>
+                <img src="assets/Imagenes/Aqcua di Gio Parfum.png" alt="Acqua di Gio Parfum">
+                <p>Acqua Di Gio Parfum</p>
+                <p>¢55000</p>
 
-                    <!-- precios de los productos -->
-                    <td>¢55000</td>
-                    <td>¢65000</td>
-                    <td>¢45000</td>
-                    <td>¢60000</td>
-                    <td>¢70000</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th>Catalogo</th>
-                </tr>
-            </tfoot>
-        </table>
+            </div>
+
+            <div class="rotateleft">
+
+                <img src="assets/Imagenes/Jean Paul Gaultier le beau le parfum.png" alt="Jean Paul Gaultier Le Beau Le Parfum">
+                <p>Jean Paul Gaultier Le Beau Le Parfum</p>
+                <p>¢65000</p>
+
+            </div>
+
+            <div class="rotateright">
+
+                <img src="assets/Imagenes/Scandal.png" alt="Scandal Jean Paul Gaultier">
+                <p>Scandal Jean Paul Gaultier</p>
+                <p>¢45000</p>
+
+            </div>
+
+            <div class="rotateleft">
+
+                <img src="assets/Imagenes/Stronger With You Intensely.png" alt="Stronger With You Intensely">
+                <p>Stronger With You Intensely</p>
+                <p>¢60000</p>
+
+            </div>
+
+            <div class="rotateright">
+
+                <img src="assets/Imagenes/Valentino Born in Roma intense.png" alt="Valentino Born In Roma Intense">
+                <p>Valentino Born In Roma Intense</p>
+                <p>¢70000</p>
+
+            </div>
+
+        </div>                
 
         <!-- zona de la lista descriptiva con los acordes de cada producto -->
-       <br> <h1>Acordes</h1>
-       <dl>
-        <dt><strong>Acqua Di Gio Parfum</strong></dt>
-        <dd>Aromatico, Fresco especiado, Marino/Acuatica</dd><br>
-        <dt><strong>Jean Paul Gaultier Le Beau Le Parfum</strong></dt>
-        <dd>Jean Paul Gaultier Le Beau Le Parfum</dd><br>
-        <dt><strong>Scandal Jean Paul Gaultier</strong></dt>
-        <dd>Dulce, caramelo, Amaderado</dd><br>
-        <dt><strong>Stronger With You Intensely</strong></dt>
-        <dd>Dulce, Vainillla, Ambar</dd><br>
-        <dt><strong>Valentino Born In Roma Intense</strong></dt>
-        <dd>Vainilla, Ambar, Lavanda</dd><br>
-       </dl>
+       
+        <div class="tabla">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                    <th>Nombre</th>
+                    <th>Acordes</th>
+
+                    </tr>
+
+                </thead>
+                
+                <tbody>
+
+                    <tr>
+
+                        <td>Acqua Di Gio Parfum</td>
+                        <td>Aromatico, Fresco especiado, Marino/Acuatica</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Jean Paul Gaultier Le Beau Le Parfum</td>
+                        <td>Aromatico, Lavanda, Tropical</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Scandal Jean Paul Gaultier</td>
+                        <td>Dulce, caramelo, Amaderado</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Stronger With You Intensely</td>
+                        <td>Dulce, Vainillla, Ambar</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Valentino Born In Roma Intense</td>
+                        <td>Vainilla, Ambar, Lavanda</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+       </div>
+
     </main>
 
     <footer>

@@ -1,0 +1,238 @@
+a {
+
+    text-decoration: none;
+
+}
+
+a:hover {
+
+    text-decoration: underline;
+    font-weight: bold;
+    color: darkturquoise;
+
+}
+
+ul {
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 100px;
+
+    }
+
+.principal {
+
+    max-width: 950px;
+    margin: auto;
+    background-color: antiquewhite;
+    padding: 50px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+
+}
+
+.logo, .svg {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+
+}
+
+header {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+video {
+
+    width: 300px;
+    height: 250px;
+
+}
+
+.multimedia {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+footer {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.rotateright {
+
+    float: left;
+    transform: rotate(0.5deg);
+    max-width: 142px;
+
+}
+
+.rotateleft {
+
+    float: left;
+    transform: rotate(0.5deg);
+    max-width: 142px;
+
+}
+
+.rotateright img {
+
+    width: 100px;
+    height: 150px;
+    background-color: bisque;
+    border: 1px solid maroon;
+    padding: 20px;
+
+}
+
+.rotateleft img {
+
+    width: 100px;
+    height: 150px;
+    background-color: bisque;
+    border: 1px solid maroon;
+    padding: 20px;
+
+}
+
+.imagenes {
+
+    display: flex;
+  justify-content: center;
+
+}
+
+.imagenes div:hover {
+
+    transition: 0.3s;
+    transform: scale(1.1);
+    filter: contrast(150%);
+    font-weight: bold;
+    color: maroon;
+
+}
+
+.imagenes div:hover img {
+
+    animation: animacion 0.3s forwards;
+
+}
+
+@keyframes animacion {
+
+    from {background-color: bisque;}
+    to {background-color: rgb(145, 125, 83)}
+
+}
+
+.tabla {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+table {
+
+    border: 1px solid maroon;
+    border-collapse: collapse;
+    width: 75%;
+    background-color: bisque;
+    color: maroon;
+    overflow-x: auto;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+
+}
+
+td, th {
+
+    border: 1px solid maroon;
+
+}
+
+th {
+
+    background-color: maroon;
+    color: bisque;
+
+}
+
+table:last-child {
+
+    border-bottom: 3px solid maroon;
+
+}
+
+tr:nth-last-child(even) {
+
+    background-color: rgba(128, 0, 0, 0.301);
+    color: bisque;
+
+}
+
+tr:hover {
+
+    background-color: rgba(165, 42, 42, 0.932);
+    color: bisque;
+
+}
+
+@font-face {
+
+    src: url("../fuentes/Fira_Code/FiraCode-VariableFont_wght.ttf");
+    font-family: "mifuente";
+
+}
+body {
+
+    font-family: "mifuente";
+    font-size: 12px;
+
+}
+
+form {
+
+    background-image: url("../Imagenes/fondo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    color: white;
+    padding: 30px;
+    filter: sepia(30%) grayscale(10%) brightness(85%);
+
+}
+
+input:focus, textarea:focus {
+
+box-shadow: 4px 4px 8px rgba(255, 255, 255, 1);
+
+}
+
+button {
+
+background-color: bisque;
+color: maroon;
+padding: 10px;
+border: 1px solid maroon;
+
+}
+
+input, textarea {
+
+background-color: bisque;
+color: maroon;
+padding: 10px;
+border: 1px solid maroon;
+
+}
