@@ -1,8 +1,13 @@
+
+/* quitar el subrayado de los enlaces */
+
 a {
 
     text-decoration: none;
 
 }
+
+/* cambiar el color de las letras, poner en negrita y poner el subrayado al pasar el cursor por encima */
 
 a:hover {
 
@@ -11,6 +16,8 @@ a:hover {
     color: darkturquoise;
 
 }
+
+/* alinear la lista de navegacion al centro de la pagina y ponerlos uno al lado de otro */
 
 ul {
 
@@ -21,23 +28,25 @@ ul {
 
     }
 
+/* poner un color de fondo y una sombra al contenedor principal */
+
 .principal {
 
-    max-width: 950px;
-    margin: auto;
     background-color: antiquewhite;
-    padding: 50px;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 
 }
 
+/* tamaño y redondeado de los logos de la pagina */
+
 .logo, .svg {
 
-    width: 150px;
-    height: 150px;
-    border-radius: 50px;
+    width: 100%;
+    height: auto;
 
 }
+
+/* alinear la parte de los logos, el nombre y la navegacion en el medio de la pagina */
 
 header {
 
@@ -47,12 +56,16 @@ header {
 
 }
 
-video {
+/* tamaño de el video */
+
+.video {
 
     width: 300px;
     height: 250px;
 
 }
+
+/* alinear el video y el audio al centro de la pagina */
 
 .multimedia {
 
@@ -62,12 +75,16 @@ video {
 
 }
 
+/* alinear el footer al centro de la pagina */
+
 footer {
 
     display: flex;
     justify-content: center;
 
 }
+
+/* contenedores de las imagenes de los productos con rotacion */
 
 .rotateright {
 
@@ -84,6 +101,8 @@ footer {
     max-width: 142px;
 
 }
+
+/* tamaño de las imagenes dentro de los contenedores */
 
 .rotateright img {
 
@@ -105,12 +124,16 @@ footer {
 
 }
 
+/* alinear las imagenes al centro de la pagina */
+
 .imagenes {
 
     display: flex;
   justify-content: center;
 
 }
+
+/* cambiar el color y estilo de las letras, subir el tamaño y cambiar el cursor al pasar por arriba de las imagenes */
 
 .imagenes div:hover {
 
@@ -119,14 +142,19 @@ footer {
     filter: contrast(150%);
     font-weight: bold;
     color: maroon;
+    cursor: pointer;
 
 }
+
+/* cambiar el color al fondo de las imagenes al pasar por arriba de su contenedor con una animacion */
 
 .imagenes div:hover img {
 
     animation: animacion 0.3s forwards;
 
 }
+
+/* animacion para cambiar el color */
 
 @keyframes animacion {
 
@@ -135,12 +163,16 @@ footer {
 
 }
 
+/* alinear la tabla al centro de la pagina */
+
 .tabla {
 
     display: flex;
     justify-content: center;
 
 }
+
+/* dar estilo a la tabla */
 
 table {
 
@@ -154,6 +186,8 @@ table {
     box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 
 }
+
+/* poner estilos dentro de la tabla */
 
 td, th {
 
@@ -181,6 +215,8 @@ tr:nth-last-child(even) {
 
 }
 
+/* cambiar el color de la letras y del fondo al pasar por arriba de ellas */
+
 tr:hover {
 
     background-color: rgba(165, 42, 42, 0.932);
@@ -188,18 +224,25 @@ tr:hover {
 
 }
 
+/* fuente personalizada */
+
 @font-face {
 
     src: url("../fuentes/Fira_Code/FiraCode-VariableFont_wght.ttf");
     font-family: "mifuente";
 
 }
+
+/* aplicar la fuente a toda la pagina */
+
 body {
 
     font-family: "mifuente";
     font-size: 12px;
 
 }
+
+/* imagen de fondo en el formulario con un filtro aplicado */
 
 form {
 
@@ -213,11 +256,15 @@ form {
 
 }
 
+/* cambiar estilo a los cuadros de entrada cuando esten seleccionados */
+
 input:focus, textarea:focus {
 
 box-shadow: 4px 4px 8px rgba(255, 255, 255, 1);
 
 }
+
+/* dar estilo al boton de enviar formulario */
 
 button {
 
@@ -228,11 +275,86 @@ border: 1px solid maroon;
 
 }
 
+/* dar estilo al cuadro de comentarios */
+
 input, textarea {
 
 background-color: bisque;
 color: maroon;
 padding: 10px;
 border: 1px solid maroon;
+
+}
+
+/* hacer el contenedor principal responsive */
+
+.principal {
+
+    width: 100%;
+    height: auto;
+
+}
+
+/* hacer las imagenes y videos responsive */
+
+img, video {
+
+    max-width: 100%;
+    margin: auto;
+
+}
+
+/* cuando el tamaño minimo del dispositivo sea 768px el contenedor principal va a adquirir un padding, un tamaño maximo de ancho y se alineara al centro de la pagina */
+
+@media (min-width: 768px) {
+
+    .principal {
+
+        max-width: 950px;
+        margin: auto;
+        padding: 20px;
+
+    }
+
+}
+
+/* en celulares las imagenes se acomodaran en columnas y el espacio entre elementos de navegacion sera menor */
+
+@media (max-width: 480px) {
+
+    .imagenes {
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+
+    ul {
+
+        gap: 20px;
+
+    }
+
+}
+
+/* para tablets las imagenes se acomodaran en columnas dependiendo del tamaño de la pantalla */
+
+@media (max-width: 768px) {
+
+    .imagenes {
+
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+}
+
+.logo {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
 
 }
